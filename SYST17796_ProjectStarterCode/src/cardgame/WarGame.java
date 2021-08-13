@@ -39,7 +39,9 @@ public class WarGame extends Game {
         while (!tieBreaker(player1.topCard(), player2.topCard())) {
             declareWinner();
             moveTopCards(temp);
+            declareWinner();
             moveTopCards(temp);
+            declareWinner();
             moveTopCards(temp);
             declareWinner();
             //Changed rules from 1 card face down to 3 because the game took too long to finish otherwise
